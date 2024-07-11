@@ -1,9 +1,10 @@
 import pandas as pd #importing library
 import matplotlib.pyplot as plt #importing library
 import numpy as np #importing library
-
-
 dffullnames = pd.read_csv('DATAAAAAA.csv') #importing csv file
+
+
+
 
 ws=dffullnames.loc[:100,('Name','Nationality','Reactions','Aggression','Contract_Expiry','Rating', 'Finishing','Long_Shots','Club_Position','Freekick_Accuracy','Penalties','Stamina','Crossing','Shot_Power','Finishing','Index','Average')] #filtering csv file
 wsx=ws[ws.Club_Position != 'GK']
